@@ -836,6 +836,13 @@ body {
     color: #3d2b24;
     margin: 0 0 5px;
 }
+.msc-achievement {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    color: #8b6844;
+    margin-top: 10px;
+}
 
 
 /* Photos + highlights */
