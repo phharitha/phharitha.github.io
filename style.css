@@ -1,0 +1,1964 @@
+/* =========================================
+   HARITHA PROFESSIONAL WEBSITE
+   Main Styles
+   ========================================= */
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f3ec;
+    color: #3d2b24;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(248, 243, 236, 0.88);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(139, 105, 70, 0.12);
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #8b6946;
+}
+
+
+/* Navigation links */
+
+.navbar nav {
+    display: flex;
+    gap: 34px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #594239;
+
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #b28a57;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    padding: 140px 10% 100px;
+
+    overflow: hidden;
+}
+
+
+/* Hero text */
+
+.hero-content {
+    width: 62%;
+    position: relative;
+    z-index: 2;
+}
+
+
+.small-label,
+.section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #a07b4f;
+    margin-bottom: 25px;
+}
+
+
+/* Main name */
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(70px, 9vw, 125px);
+
+    font-weight: 500;
+    line-height: 0.9;
+
+    color: #3d2b24;
+
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: #a67c4e;
+}
+
+
+/* Academic title */
+
+.hero h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 29px;
+    line-height: 1.2;
+
+    font-weight: 500;
+
+    color: #513b30;
+
+    margin-bottom: 28px;
+}
+
+.hero h2 span {
+    color: #9a744b;
+}
+
+
+/* Description */
+
+.hero-description {
+    max-width: 600px;
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    color: #6b584f;
+
+    margin-bottom: 38px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Primary */
+
+.primary-button {
+    background: #8b6946;
+    color: #fffaf4;
+}
+
+.primary-button:hover {
+    background: #6f5137;
+    transform: translateY(-2px);
+}
+
+
+/* Secondary */
+
+.secondary-button {
+    border: 1px solid #bda27f;
+    color: #76583e;
+}
+
+.secondary-button:hover {
+    background: #eee3d5;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- HERO DECORATION ---------- */
+
+/* =========================
+   HERO PHOTO COLLAGE
+========================= */
+
+.hero-collage {
+    position: relative;
+    width: 520px;
+    height: 500px;
+    margin-left: auto;
+}
+
+.hero-collage .photo {
+    position: absolute;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    background: transparent;
+    box-shadow: 0 10px 25px rgba(61, 43, 36, 0.12);
+    border-radius: 2px;
+}
+
+.hero-collage .photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Top left */
+
+.hero-collage .photo-1 {
+    width: 245px;
+    height: 150px;
+    top: 5px;
+    left: 0;
+}
+
+
+/* Top right */
+
+.hero-collage .photo-2 {
+    width: 245px;
+    height: 150px;
+    top: 5px;
+    right: 0;
+}
+
+
+/* Center */
+
+.hero-collage .photo-3 {
+    width: 290px;
+    height: 165px;
+    top: 167px;
+    left: 115px;
+    z-index: 3;
+}
+
+
+/* Bottom left */
+
+.hero-collage .photo-4 {
+    width: 245px;
+    height: 150px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+/* Bottom right */
+
+.hero-collage .photo-5 {
+    width: 245px;
+    height: 150px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/* Gentle hover */
+
+.hero-collage .photo:hover {
+    transform: scale(1.025);
+    z-index: 10;
+    box-shadow: 0 15px 32px rgba(61, 43, 36, 0.18);
+}
+
+/* ---------- INTRODUCTION ---------- */
+
+.intro-section {
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding: 150px 8%;
+}
+
+
+.intro-section h2,
+.journey-preview h2,
+.research-preview h2,
+.skills-preview h2,
+.contact-section h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    font-weight: 500;
+
+    line-height: 1.05;
+
+    color: #432f27;
+
+    margin-bottom: 35px;
+}
+
+
+.intro-text {
+    max-width: 720px;
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    color: #6c5a50;
+
+    margin-bottom: 22px;
+}
+
+
+/* ---------- SECTION PLACEHOLDERS ---------- */
+
+.journey-preview,
+.research-preview,
+.skills-preview,
+.contact-section {
+
+    min-height: 70vh;
+
+    padding: 150px 10%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+/* Journey */
+
+.journey-preview {
+    background: #efe4d6;
+}
+
+
+/* Research */
+
+.research-preview {
+    background: #f8f3ec;
+}
+
+
+/* Skills */
+
+.skills-preview {
+    background: #eee2d4;
+}
+
+
+/* Contact */
+
+.contact-section {
+    background: #3d2b24;
+
+    color: #f8f3ec;
+
+    text-align: center;
+
+    align-items: center;
+}
+
+.contact-section h2 {
+    color: #f8f3ec;
+}
+
+.contact-section p {
+    max-width: 550px;
+
+    color: #d8c8b8;
+
+    font-size: 15px;
+}
+
+
+/* ---------- ANIMATION ---------- */
+
+@keyframes gentleFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .navbar nav a {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .hero {
+        padding: 130px 8% 80px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-decoration {
+        opacity: 0.25;
+
+        right: -90px;
+
+        width: 280px;
+        height: 380px;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .intro-section,
+    .journey-preview,
+    .research-preview,
+    .skills-preview,
+    .contact-section {
+
+        padding: 100px 8%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 100vh;
+
+        padding-top: 120px;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .intro-section h2,
+    .journey-preview h2,
+    .research-preview h2,
+    .skills-preview h2,
+    .contact-section h2 {
+
+        font-size: 45px;
+    }
+}
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+    min-height: 100vh;
+    padding: 150px 8% 80px;
+    background: #f8f3ec;
+}
+
+
+/* Page heading */
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.about-heading .section-label {
+    margin-bottom: 12px;
+}
+
+.about-heading h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 64px;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0;
+}
+
+
+/* Main content */
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+/* Photo */
+
+.about-photo {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(61, 43, 36, 0.12);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* Text */
+
+.about-text {
+    max-width: 560px;
+}
+
+.about-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9;
+    color: #5a4941;
+    margin-bottom: 22px;
+}
+
+.about-text .about-intro {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 27px;
+    line-height: 1.45;
+    color: #3d2b24;
+    margin-bottom: 28px;
+}
+
+
+/* Small decorative line */
+
+.about-line {
+    width: 55px;
+    height: 1px;
+    background: #b58b55;
+    margin: 35px 0 25px;
+}
+
+
+/* Closing thought */
+
+.about-text .about-quote {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    line-height: 1.35;
+    color: #8b6844;
+    margin: 0;
+}
+/* =========================
+   ACADEMIC JOURNEY PAGE
+========================= */
+
+.journey-page {
+    min-height: 100vh;
+    padding: 150px 8% 100px;
+    background: #f8f3ec;
+}
+
+
+/* Page heading */
+
+.journey-heading {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.journey-heading .section-label {
+    margin-bottom: 12px;
+}
+
+.journey-heading h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 64px;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0;
+}
+
+
+/* BSc title */
+
+.bsc-section {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.bsc-title {
+    margin-bottom: 5px;
+}
+
+.journey-year {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #a27b52;
+    margin-bottom: 8px;
+}
+
+.bsc-title h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0 0 5px;
+}
+
+.institution {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #6a574e;
+    margin: 0;
+}
+
+
+/* Thesis + photos */
+
+.bsc-layout {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 65px;
+    align-items: start;
+}
+
+
+/* Thesis */
+
+.bsc-thesis {
+    text-align: center;
+}
+
+.bsc-thesis img {
+    width: 100%;
+    max-width: 330px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px rgba(61, 43, 36, 0.13);
+}
+
+.thesis-link {
+    display: inline-block;
+    margin-top: 18px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+
+    color: #8b6844;
+    text-decoration: none;
+
+    border-bottom: 1px solid #c7a77d;
+    padding-bottom: 3px;
+
+    transition: 0.3s ease;
+}
+
+.thesis-link:hover {
+    color: #3d2b24;
+    border-color: #3d2b24;
+}
+
+
+/* Four landscape photos */
+
+.bsc-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.bsc-photo {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(61, 43, 36, 0.10);
+}
+
+.bsc-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.bsc-photo:hover img {
+    transform: scale(1.03);
+}
+
+
+/* BSc writing */
+
+.bsc-story {
+    margin-top: 75px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 55px;
+
+    border-top: 1px solid rgba(181, 139, 85, 0.35);
+    padding-top: 35px;
+}
+
+.story-label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #a27b52;
+    margin-bottom: 12px;
+}
+
+.bsc-story > div > p:last-child {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #5a4941;
+    margin: 0;
+}
+/* =========================
+   MSc SECTION
+========================= */
+
+.msc-section {
+    max-width: 1150px;
+    margin: 150px auto 0;
+}
+
+
+/* MSc title */
+
+.msc-title {
+    margin-bottom: 30px;
+}
+
+.msc-title h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0 0 5px;
+}
+
+
+/* Photos + highlights */
+
+.msc-intro-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 70px;
+    align-items: center;
+}
+
+
+/* =========================
+   FIVE COLLEGE PHOTOS
+   2 — 1 — 2
+========================= */
+
+.msc-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    align-items: center;
+}
+
+
+/* Landscape photos */
+
+.msc-photo {
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(61, 43, 36, 0.10);
+}
+
+.msc-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* Middle portrait photo */
+
+.msc-photo:nth-child(3) {
+    grid-column: 1 / -1;
+
+    width: 125px;
+    height: 165px;
+
+    justify-self: center;
+}
+/* MSc photo hover */
+
+.msc-photo img {
+    transition: transform 0.5s ease;
+}
+
+.msc-photo:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================
+   MSc HIGHLIGHTS
+========================= */
+
+.msc-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.msc-highlight {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    border-bottom: 1px solid rgba(181, 139, 85, 0.35);
+    padding-bottom: 18px;
+}
+
+.msc-highlight span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #a27b52;
+}
+
+.msc-highlight p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    color: #3d2b24;
+    margin: 0;
+}
+/* =========================================================
+   SCIENCE COMMUNICATION INTERNSHIP
+   ========================================================= */
+
+.science-communication {
+    width: 100%;
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+
+/* Heading / introduction */
+
+.science-header {
+    margin-bottom: 45px;
+}
+
+.science-header .story-label {
+    margin-bottom: 12px;
+}
+
+.science-header h3 {
+    margin-bottom: 20px;
+}
+
+.science-header .experience-item {
+    margin-bottom: 8px;
+}
+
+.science-header .experience-date {
+    margin-top: 18px;
+}
+
+
+/* Main two-column area */
+
+.science-content {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.8fr) minmax(420px, 1.2fr);
+    gap: 45px;
+    align-items: start;
+}
+
+
+/* Internship report */
+
+.science-report {
+    width: 100%;
+}
+
+.science-report img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 620px;
+    object-fit: contain;
+    object-position: top center;
+}
+
+.science-report .thesis-link {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+
+/* Photo grid */
+
+.science-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    width: 100%;
+}
+
+
+/* Individual photo */
+
+.science-photo {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.science-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Reflection */
+
+.science-description {
+    max-width: 850px;
+    margin-top: 45px;
+}
+
+.science-description p {
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .science-communication {
+        margin: 70px auto;
+        padding: 0 20px;
+    }
+
+    .science-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .science-photos {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .science-photo {
+        height: 200px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .science-photos {
+        grid-template-columns: 1fr;
+    }
+
+    .science-photo {
+        height: 260px;
+    }
+
+}
+/* =========================================================
+   PHOTO HOVER ZOOM — MSc + Science Communication
+   ========================================================= */
+
+.msc-experience .experience-photo,
+.science-communication .science-photo {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.msc-experience .experience-photo img,
+.science-communication .science-photo img {
+    transition: transform 0.5s ease;
+}
+
+.msc-experience .experience-photo:hover img,
+.science-communication .science-photo:hover img {
+    transform: scale(1.05);
+}
+/* =========================================================
+   ANERT INTERNSHIP
+   ========================================================= */
+
+.anert-section {
+    max-width: 1150px;
+    margin: 150px auto 0;
+    padding: 0 20px;
+}
+
+
+/* =========================
+   ANERT HEADER
+========================= */
+
+.anert-header {
+    margin-bottom: 45px;
+}
+
+.anert-header h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0 0 20px;
+}
+
+
+/* =========================
+   PHOTOS + REPORT
+========================= */
+
+.anert-content {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 60px;
+    align-items: start;
+}
+
+
+/* =========================
+   FOUR PHOTOS
+========================= */
+
+.anert-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: stretch;
+}
+
+
+/* Photo containers */
+
+.anert-photo {
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(61, 43, 36, 0.10);
+    cursor: pointer;
+}
+
+
+/* Landscape photos */
+
+.anert-landscape {
+    height: 250px;
+}
+
+
+/* Portrait photo */
+
+.anert-portrait {
+    height: 250px;
+}
+
+
+/* Images */
+
+.anert-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+
+/* Hover zoom */
+
+.anert-photo:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   REPORT
+========================= */
+
+.anert-report {
+    width: 100%;
+}
+
+.anert-report img {
+    width: 100%;
+    max-height: 560px;
+    display: block;
+    object-fit: contain;
+    object-position: top center;
+}
+
+.anert-report .thesis-link {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.anert-description {
+    max-width: 850px;
+    margin-top: 50px;
+}
+
+.anert-description p {
+    line-height: 1.8;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .anert-section {
+        margin: 100px auto 0;
+    }
+
+    .anert-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .anert-landscape {
+        height: 150px;
+    }
+
+    .anert-portrait {
+        height: 230px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .anert-photos {
+        grid-template-columns: 1fr;
+    }
+
+    .anert-landscape,
+    .anert-portrait {
+        height: 250px;
+    }
+
+}
+/* =========================================================
+   KODAIKANAL SOLAR OBSERVATORY
+   ========================================================= */
+
+.kso-section {
+    max-width: 1150px;
+    margin: 150px auto 0;
+    padding: 0 20px 120px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.kso-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.kso-header .story-label {
+    margin-bottom: 12px;
+}
+
+.kso-header h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0 0 15px;
+}
+
+.kso-header .experience-date {
+    margin: 0;
+}
+
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.kso-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+}
+
+
+/* Individual photos */
+
+.kso-photo {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(61, 43, 36, 0.10);
+    cursor: pointer;
+}
+
+
+/* Images */
+
+.kso-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+
+/* Hover zoom */
+
+.kso-photo:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   CENTRE STORY
+========================= */
+
+.kso-story {
+    max-width: 700px;
+    margin: 55px auto 0;
+    text-align: center;
+}
+
+.kso-story h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0 0 15px;
+}
+
+.kso-story p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #6b574d;
+    margin: 0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .kso-section {
+        margin: 100px auto 0;
+    }
+
+    .kso-photos {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .kso-photo {
+        height: 150px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .kso-photos {
+        grid-template-columns: 1fr;
+    }
+
+    .kso-photo {
+        height: 210px;
+    }
+
+}
+/* =========================================================
+   MSc RESEARCH PROJECT PAGE
+   ========================================================= */
+
+
+/* =========================
+   PROJECT PAGE
+========================= */
+
+.project-page {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 120px 20px 100px;
+}
+
+
+/* =========================
+   PROJECT INTRO
+========================= */
+
+.project-intro {
+    max-width: 900px;
+    margin: 0 auto 140px;
+    text-align: center;
+}
+
+.project-intro .story-label {
+    margin-bottom: 18px;
+}
+
+.project-intro h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 52px;
+    line-height: 1.08;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0 auto 25px;
+}
+
+.project-institution {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #6b574d;
+    margin-bottom: 10px;
+}
+
+.project-date {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #a27b52;
+    margin: 0;
+}
+
+
+/* =========================
+   SECTION 1 — RESEARCH
+========================= */
+
+.research-section {
+    margin-bottom: 160px;
+}
+
+.research-heading {
+    max-width: 720px;
+    margin-bottom: 60px;
+}
+
+.research-heading h2,
+.laboratory-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    line-height: 1.15;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0 0 20px;
+}
+
+.research-heading > p:last-child,
+.laboratory-heading > p:last-child {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #6b574d;
+    margin: 0;
+}
+
+
+/* =========================
+   THESIS + MEMORIES
+========================= */
+
+.research-layout {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 55px;
+    align-items: start;
+}
+
+
+/* Thesis */
+
+.research-thesis {
+    width: 100%;
+}
+
+.research-thesis img {
+    width: 100%;
+    display: block;
+    max-height: 600px;
+    object-fit: contain;
+    object-position: top center;
+}
+
+.research-thesis .thesis-link {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+
+/* Memories */
+
+.research-memories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.research-memory {
+    height: 230px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(61, 43, 36, 0.10);
+    cursor: pointer;
+}
+
+.research-memory img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+
+.research-memory:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   RESEARCH REFLECTION
+========================= */
+
+.research-reflection {
+    max-width: 780px;
+    margin: 55px auto 0;
+    text-align: center;
+}
+
+.research-reflection p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #4f3b32;
+    margin: 0;
+}
+
+
+/* =========================================================
+   SECTION 2 — LABORATORY
+========================================================= */
+
+.laboratory-section {
+    margin-bottom: 100px;
+}
+
+.laboratory-heading {
+    max-width: 720px;
+    margin-bottom: 60px;
+}
+
+
+/* =========================
+   LABORATORY GALLERY
+========================= */
+
+.laboratory-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.lab-photo {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(61, 43, 36, 0.10);
+    cursor: pointer;
+    background: #f8f3ed;
+}
+
+.lab-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.lab-photo:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .laboratory-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        max-width: 650px;
+    }
+
+    .lab-photo {
+        height: 260px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .laboratory-gallery {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .lab-photo {
+        height: 320px;
+    }
+
+}
+/* =========================
+   TECHNIQUES
+========================= */
+
+.research-techniques {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 50px;
+    margin-top: 70px;
+}
+
+.technique-item {
+    border-bottom: 1px solid rgba(181, 139, 85, 0.35);
+    padding: 22px 0;
+}
+
+.technique-item span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    color: #a27b52;
+}
+
+.technique-item p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 21px;
+    line-height: 1.4;
+    color: #3d2b24;
+    margin: 8px 0 0;
+}
+
+
+/* =========================
+   PRESENTATION
+========================= */
+
+.project-presentation {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.presentation-image {
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(61, 43, 36, 0.10);
+}
+
+.presentation-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.presentation-image:hover img {
+    transform: scale(1.03);
+}
+
+.presentation-text h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0 0 18px;
+}
+
+.presentation-text > p:not(.story-label) {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #6b574d;
+    margin-bottom: 25px;
+}
+
+.presentation-text .thesis-link {
+    display: inline-block;
+}
+
+
+/* =========================
+   FINAL REFLECTION
+========================= */
+
+.laboratory-reflection {
+    max-width: 780px;
+    margin: 100px auto 0;
+    padding-top: 45px;
+    border-top: 1px solid rgba(181, 139, 85, 0.35);
+    text-align: center;
+}
+
+.laboratory-reflection p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    line-height: 1.7;
+    color: #4f3b32;
+    margin: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .project-page {
+        padding: 90px 20px 70px;
+    }
+
+    .project-intro {
+        margin-bottom: 100px;
+    }
+
+    .project-intro h1 {
+        font-size: 42px;
+    }
+
+    .research-heading h2,
+    .laboratory-heading h2 {
+        font-size: 38px;
+    }
+
+    .research-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .research-memories {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .laboratory-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-presentation {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .project-intro h1 {
+        font-size: 36px;
+    }
+
+    .research-heading h2,
+    .laboratory-heading h2 {
+        font-size: 34px;
+    }
+
+    .research-memories {
+        grid-template-columns: 1fr;
+    }
+
+    .laboratory-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .lab-photo {
+        height: 230px;
+    }
+
+    .research-techniques {
+        grid-template-columns: 1fr;
+    }
+
+}
+ /* =========================================================
+    CONTACT PAGE
+========================================================= */
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 150px 20px 120px;
+}
+
+
+/* =========================
+   CONTACT INTRO
+========================= */
+
+.contact-intro {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-intro .story-label {
+    margin-bottom: 20px;
+}
+
+.contact-intro h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 58px;
+    line-height: 1.08;
+    font-weight: 500;
+    color: #3d2b24;
+    margin: 0 0 30px;
+}
+
+.contact-description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #6b574d;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   CONTACT DETAILS
+========================= */
+
+.contact-details {
+    max-width: 750px;
+    margin: 100px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 60px;
+}
+
+.contact-item {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(181, 139, 85, 0.35);
+}
+
+.contact-item span {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    color: #a27b52;
+    margin-bottom: 9px;
+}
+
+.contact-item a {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    color: #3d2b24;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #a27b52;
+}
+
+
+/* =========================
+   CLOSING
+========================= */
+
+.contact-closing {
+    max-width: 650px;
+    margin: 100px auto 0;
+    text-align: center;
+    padding-top: 45px;
+    border-top: 1px solid rgba(181, 139, 85, 0.35);
+}
+
+.contact-closing p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #4f3b32;
+    margin: 0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .contact-page {
+        padding: 100px 20px 80px;
+    }
+
+    .contact-intro h1 {
+        font-size: 46px;
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+        margin-top: 70px;
+    }
+
+    .contact-closing {
+        margin-top: 70px;
+    }
+
+}
+/* =========================
+   NAVIGATION HOVER
+========================= */
+
+.navbar nav a {
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #a27b52;
+}
